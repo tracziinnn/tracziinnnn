@@ -1,12 +1,11 @@
 :root
 {
---cor-de-fundo: #f5f5f5;
+--cor-de-fundo: #043a77;
 --preto: #000000;
 --braco: #ffffff;
---botao-ativo: #020f0;
---botao-inativo: #ff00ff;
+--roxo: #a020f0;
+--rosa: #ff00ff;
 --texto-fundo: #87cefa;
---cor-borda:  #000000;
 
 
 }
@@ -26,8 +25,28 @@
     color: var(--preto);
 }
 
-.botao{
-    background-color: #ff00ff;
-    color:aqua;
-    
+.titulo-principal span {
+     color: var(--botao-inativo);
+}
+.botao
+{
+    background-color: var(--rosa);
+    color: var(--braco);
+    display: flex;
+    justify-content: center;
+    padding: 1ex;
+    font-size: 15px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--preto);
+    border-left: 3px solid var(--preto);
+    border-right: 3px solid var(--preto);
+    border-top: 4px solid var(--preto);
+}
+.botoes {
+    display: block;
+}
+.botao:first-child
+{
+    border-radius: 40px 40px 0 0;
 }
